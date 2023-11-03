@@ -102,7 +102,7 @@ function Post() {
                 <BsEmojiLaughing className={`m-1 ${styles.p_emoji}`} />
                 <p className={`${styles.p_font1}`}>{item.reactions}</p>
               </div>
-              <div className="d-flex col-4">
+              <div className="d-flex col-5 col-lg-4">
                 <p className={`ms-1 me-1 ${styles.p_font1}`}>
                   {item.comments} comments
                 </p>
