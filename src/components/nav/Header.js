@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { GiAlienBug } from "react-icons/gi";
 import { FiSearch } from "react-icons/fi";
 
-function Header() {
+function Header({ setLoginModal, loginModal }) {
   return (
     <Navbar
       expand="lg"
@@ -57,6 +57,9 @@ function Header() {
       </Container>
       <div className="d-md-flex justify-content-center">
         <button
+          onClick={() => {
+            setLoginModal(!loginModal);
+          }}
           className={`btn mt-2 m-lg-0 bg-info text-white ${styles.login_btn}`}
         >
           Login

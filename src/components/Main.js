@@ -6,11 +6,14 @@ import Post from "./body/Post";
 
 import styles from "@/styles/Home.module.css";
 import ShowFilter from "./body/ShowFilter";
+import LoginModal from "./body/LoginModal";
 
-function Main() {
+function Main({ loginModal, setLoginModal }) {
   return (
     <div className={`row ${styles.main_container}`}>
       {/* grid system */}
+      <LoginModal onShow={loginModal} onClose={setLoginModal} />
+
       <Banner />
       <div className="row">
         <div className="col-md-3">
